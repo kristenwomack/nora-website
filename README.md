@@ -21,3 +21,9 @@ The featured project and image URLs are managed in `src/data/projects.ts`. Repla
 npm run lint
 npm run build
 ```
+
+## Deployment
+
+The site is configured as a static export and deploys to GitHub Pages when
+changes are pushed to `main`. GitHub Pages must be enabled with **GitHub
+Actions** selected as the source.

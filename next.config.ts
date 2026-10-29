@@ -1,9 +1,13 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.PAGES_BASE_PATH ?? "";
+
 const nextConfig: NextConfig = {
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: "export",
+  basePath,
+  trailingSlash: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
