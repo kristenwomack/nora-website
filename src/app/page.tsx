@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero-copy">
-            <p className="eyebrow">Featured project · 2024</p>
+            <p className="eyebrow">Featured project · {featured.year}</p>
             <h1>Quiet stories,<br />honestly observed.</h1>
             <p className="hero-intro">
               Nora Womack is a fashion model working across editorial,

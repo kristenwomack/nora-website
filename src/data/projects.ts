@@ -14,31 +14,78 @@ export type Project = {
   gallery: ProjectImage[];
 };
 
+export const assetPath = (path: string) =>
+  `${process.env.PAGES_BASE_PATH ?? ""}${path}`;
+
 export const projects: Project[] = [
   {
     slug: "notes-from-the-coast",
     title: "Notes from the Coast",
     category: "Fashion editorial",
-    location: "California",
-    year: "2024",
+    location: "Vancouver, BC",
+    year: "2026",
     description:
-      "A coastal fashion story shaped by sculptural silhouettes, open light, and the quiet tension between movement and stillness.",
+      "An urban fashion story shaped by saturated color, graphic silhouettes, and the quiet tension between movement and stillness.",
     cover: {
-      src: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=90",
-      alt: "Fashion model in a bold street-style look",
+      src: assetPath("/images/nora/red-cover.webp"),
+      alt: "Nora Womack wearing a red suit in an urban courtyard",
     },
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=90",
-        alt: "Fashion model posing in a contemporary look",
+        src: assetPath("/images/nora/red-portrait-01.webp"),
+        alt: "Nora Womack in a red suit at dusk",
       },
       {
-        src: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1800&q=90",
-        alt: "Close editorial portrait of a fashion model",
+        src: assetPath("/images/nora/red-portrait-02.webp"),
+        alt: "Close portrait of Nora Womack in a red jacket",
       },
       {
-        src: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=2000&q=90",
-        alt: "Natural-light beauty portrait of a model",
+        src: assetPath("/images/nora/red-seated.webp"),
+        alt: "Nora Womack seated in a red suit",
+      },
+      {
+        src: assetPath("/images/nora/polka-distance.webp"),
+        alt: "Nora Womack standing beneath a pool of light in a polka-dot dress",
+      },
+      {
+        src: assetPath("/images/nora/polka-wall.webp"),
+        alt: "Nora Womack beside a brick wall in a polka-dot dress",
+      },
+      {
+        src: assetPath("/images/nora/polka-landscape.webp"),
+        alt: "Nora Womack smiling in a polka-dot dress",
+      },
+      {
+        src: assetPath("/images/nora/polka-portrait.webp"),
+        alt: "Editorial portrait of Nora Womack in a polka-dot dress",
+      },
+      {
+        src: assetPath("/images/nora/blue-seated.webp"),
+        alt: "Nora Womack seated outdoors in a pale blue suit",
+      },
+      {
+        src: assetPath("/images/nora/blue-full-length.webp"),
+        alt: "Nora Womack standing against the Vancouver skyline in a blue suit",
+      },
+      {
+        src: assetPath("/images/nora/blue-closeup.webp"),
+        alt: "Close portrait of Nora Womack in a pale blue jacket",
+      },
+      {
+        src: assetPath("/images/nora/blue-waterfront.webp"),
+        alt: "Nora Womack by the Vancouver waterfront in a blue suit",
+      },
+      {
+        src: assetPath("/images/nora/blue-editorial.webp"),
+        alt: "Nora Womack seated by the water in a pale blue suit",
+      },
+      {
+        src: assetPath("/images/nora/evening-seated.webp"),
+        alt: "Nora Womack in an evening editorial look",
+      },
+      {
+        src: assetPath("/images/nora/evening-standing.webp"),
+        alt: "Nora Womack standing beneath a waterfront colonnade at night",
       },
     ],
   },

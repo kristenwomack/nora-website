@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { assetPath } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "About",
@@ -26,8 +27,8 @@ export default function AboutPage() {
 
         <div className="about-image">
           <Image
-            src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=2400&q=90"
-            alt="Model walking on a fashion runway"
+            src={assetPath("/images/nora/blue-about.webp")}
+            alt="Nora Womack modeling a pale blue suit in Vancouver"
             fill
             priority
             sizes="100vw"
