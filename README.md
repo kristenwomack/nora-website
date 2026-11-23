@@ -14,13 +14,27 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## Image permissions
+
+Images in this repository may not be used, copied, modified, or redistributed
+without prior express permission from their rights holders.
+
 ## Contribute
 
-Update project details and gallery images in `src/data/projects.ts`. Page content
-lives in `src/app/`.
+Contributions are welcome. To propose a change:
 
-Before opening a pull request, run:
+1. Fork the repository and create a branch for your change.
+2. Make your edits. Project details and gallery entries are in
+   `src/data/projects.ts`; page content and layout are in `src/app/`.
+3. Before adding, replacing, or modifying images, get express permission from
+   the rights holders. Add approved gallery images under `public/images/nora/`
+   and include descriptive alt text in `src/data/projects.ts`.
+4. Run the checks:
 
-```bash
-npm run lint
-```
+   ```bash
+   npm install
+   npm run lint
+   npm test
+   ```
+
+5. Open a pull request describing what you changed and how you verified it.

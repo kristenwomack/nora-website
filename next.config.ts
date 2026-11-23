@@ -1,6 +1,5 @@
 import type { NextConfig } from "next";
-
-const basePath = process.env.PAGES_BASE_PATH ?? "";
+import { basePath } from "./src/lib/site";
 
 const nextConfig: NextConfig = {
   output: "export",
