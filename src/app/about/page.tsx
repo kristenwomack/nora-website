@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import { assetPath } from "@/data/projects";
+import { assetPath } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",

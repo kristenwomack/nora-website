@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/site";
+
 export type ProjectImage = {
   src: string;
   alt: string;
@@ -12,9 +14,6 @@ export type Project = {
   cover: ProjectImage;
   gallery: ProjectImage[];
 };
-
-export const assetPath = (path: string) =>
-  `${process.env.PAGES_BASE_PATH ?? ""}${path}`;
 
 export const projects: Project[] = [
   {

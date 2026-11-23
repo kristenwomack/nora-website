@@ -35,6 +35,12 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Verify production URL
+        run: node --experimental-strip-types scripts/check-pages-config.mjs
+        env:
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+
       - name: Build static site
         run: npm run build
         env:
