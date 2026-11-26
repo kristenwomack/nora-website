@@ -17,13 +17,15 @@ export default function ContactPage() {
         </h1>
         <div className="contact-grid">
           <p>
-            Nora is beginning her modeling journey in Vancouver, BC.
-            All modeling inquiries must be coordinated through her
-            parent or guardian.
+            Based in Vancouver, Nora is just getting started in modeling.
+            She brings curiosity, creative energy, and a love of trying
+            something new.
           </p>
           <div>
             <h2>Inquiries</h2>
-            <p>Contact details are not currently published.</p>
+            <p>
+              <a href="mailto:hello@norawomack.com">hello@norawomack.com</a>
+            </p>
           </div>
           <div>
             <h2>Based in</h2>
